@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<robot name="robot1" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Start of Includes -->
+  <xacro:include filename="$(find rbot_modeling)/urdf/macros2.urdf.xacro"/>
+  <!-- End of Includes -->
+
+  <!-- Start of robot description -->
+   <!-- Dummy root for KDL -->
+<link name="dummy_root"/>
+
+<joint name="basejoint" type="fixed">
+  <parent link="dummy_root"/>
+  <child link="base_link"/>
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+</joint>
+<!-- END of Dummy root -->
+
+  <link name="base_link">
+    <inertial>
+      <mass value="1024"/>
+      <origin rpy="0 0 0" xyz="0 0 0.25"/>
+      <inertia ixx="170.667" ixy="0" ixz="0" iyy="170.667" iyz="0" izz="170.667"/>
+    </inertial>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0.25"/>
+      <geometry>
+        <box size="1 1 0.5"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0.25"/>
+      <geometry>
+        <box size="1 1 0.5"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <xacro:m_joint name="J_0" type="revolute"
+                 axis_xyz="0 0 1"
+                 origin_rpy="0 0 0" origin_xyz="0 0 0.5"
+                 parent="base_link" child="link_01"
+                 limit_e="1000" limit_l="-3.14" limit_u="3.14" limit_v="0.5"/>
+
+  <xacro:m_link name="link_01"
+                origin_rpy="0 0 0" origin_xyz="0 0 0.2"
+                radius="0.35" length="0.4"
+                mass="157.633" ixx="13.235" ixy="0" ixz="0" iyy="13.235" iyz="0" izz="9.655"/>
+
+  <xacro:m_joint name="J_1" type="revolute"
+                 axis_xyz="0 1 0"
+                 origin_rpy="0 0 0" origin_xyz="0 0 0.4"
+                 parent="link_01" child="link_02"
+                 limit_e="1000" limit_l="-3.14" limit_u="3.14" limit_v="0.5"/>
+
+  <xacro:m_link name="link_02"
+                origin_rpy="0 0 0" origin_xyz="0 0 0.4"
+                radius="0.15" length="0.8"
+                mass="57.906" ixx="12.679" ixy="0" ixz="0" iyy="12.679" iyz="0" izz="0.651"/>
+
+  <xacro:m_joint name="J_2" type="revolute"
+                 axis_xyz="0 1 0"
+                 origin_rpy="0 0 0" origin_xyz="0 0 0.8"
+                 parent="link_02" child="link_03"
+                 limit_e="1000" limit_l="-3.14" limit_u="3.14" limit_v="0.5"/>
+
+  <xacro:m_link name="link_03"
+                origin_rpy="0 0 0" origin_xyz="0 0 0.4"
+                radius="0.15" length="0.8"
+                mass="57.906" ixx="12.679" ixy="0" ixz="0" iyy="12.679" iyz="0" izz="0.651"/>
+
+  <xacro:m_joint name="J_3" type="revolute"
+                 axis_xyz="0 1 0"
+                 origin_rpy="0 0 0" origin_xyz="0 0 0.8"
+                 parent="link_03" child="link_04"
+                 limit_e="1000" limit_l="-3.14" limit_u="3.14" limit_v="0.5"/>
+
+  <xacro:m_link name="link_04"
+                origin_rpy="0 0 0" origin_xyz="0 0 0.4"
+                radius="0.15" length="0.8"
+                mass="57.906" ixx="12.679" ixy="0" ixz="0" iyy="12.679" iyz="0" izz="0.651"/>
+
+  <xacro:m_joint name="J_4" type="revolute"
+                 axis_xyz="0 0 1"
+                 origin_rpy="0 0 0" origin_xyz="0 0 0.8"
+                 parent="link_04" child="link_05"
+                 limit_e="1000" limit_l="-3.14" limit_u="3.14" limit_v="0.5"/>
+
+  <xacro:m_link name="link_05"
+                origin_rpy="0 0 0" origin_xyz="0 0 0.125"
+                radius="0.15" length="0.25"
+                mass="18.056" ixx="0.479" ixy="0" ixz="0" iyy="0.479" iyz="0" izz="0.204"/>
+
+  <!-- End of robot description -->
+
+</robot>

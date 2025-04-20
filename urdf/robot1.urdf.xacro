@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<robot name="robot1" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<!-- Start of Includes -->
+<xacro:include filename="$(find rbot_modeling)/urdf/macros.urdf.xacro"/>
+<!-- Start of robot description -->
+    <link name="base_link">
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0.25"/>
+            <geometry>
+                <box size="1 1 0.5"/>
+            </geometry>
+        </visual>
+    </link>
+    <xacro:m_joint name="J_0" type="revolute" 
+    axis_xyz="0 0 1" 
+    origin_rpy="0 0 0" origin_xyz="0 0 0.5" 
+    parent="base_link" child="link_01" limit_e="1000.0" limit_l="-3.14" limit_u="3.14" limit_v="0.5"/>
+    
+    <xacro:m_link name="link_01"
+    origin_rpy="0 0 0" origin_xyz="0 0 0.2"
+    radius="0.35" length="0.4"/>
+
+    <xacro:m_joint name="J_1" type="revolute"
+    axis_xyz="0 1 0"
+    origin_rpy="0 0 0" origin_xyz="0 0 0.4"
+    parent="link_01" child="link_02" limit_e="1000.0" limit_l="-3.14" limit_u="3.14" limit_v="0.5"/>
+    
+    <xacro:m_link name="link_02"
+                origin_rpy="0 0 0" origin_xyz="0 0 0.4"
+                radius="0.15" length="0.8"/>
+
+  <xacro:m_joint name="J_2" type="revolute"
+                 axis_xyz="0 1 0"
+                 origin_rpy="0 0 0" origin_xyz="0 0 0.8"
+                 parent="link_02" child="link_03"
+                 limit_e="1000" limit_l="-3.14" limit_u="3.14" limit_v="0.5"/>
+
+  <xacro:m_link name="link_03"
+                origin_rpy="0 0 0" origin_xyz="0 0 0.4"
+                radius="0.15" length="0.8"/>
+
+  <xacro:m_joint name="J_3" type="revolute"
+                 axis_xyz="0 1 0"
+                 origin_rpy="0 0 0" origin_xyz="0 0 0.8"
+                 parent="link_03" child="link_04"
+                 limit_e="1000" limit_l="-3.14" limit_u="3.14" limit_v="0.5"/>
+
+  <xacro:m_link name="link_04"
+                origin_rpy="0 0 0" origin_xyz="0 0 0.4"
+                radius="0.15" length="0.8"/>
+
+  <xacro:m_joint name="J_4" type="revolute"
+                 axis_xyz="0 0 1"
+                 origin_rpy="0 0 0" origin_xyz="0 0 0.8"
+                 parent="link_04" child="link_05"
+                 limit_e="1000" limit_l="-3.14" limit_u="3.14" limit_v="0.5"/>
+
+  <xacro:m_link name="link_05"
+                origin_rpy="0 0 0" origin_xyz="0 0 0.125"
+                radius="0.15" length="0.25"/>
+    
+
+<!-- End of Includes -->
+</robot>
