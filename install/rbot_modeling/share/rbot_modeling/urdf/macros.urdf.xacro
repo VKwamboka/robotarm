@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro ="http://www.ros.org/wiki/xacro">
+    <xacro:macro name="m_joint" params="name type axis_xyz origin_rpy origin_xyz parent child limit_e limit_l limit_u limit_v">
+        <joint name="${name}" type="${type}">
+            <axis xyz="${axis_xyz}"/>
+            <limit effort="${limit_e}" lower="${limit_l}" upper="${limit_u}" velocity="${limit_v}"/>
+            <origin rpy="${origin_rpy}" xyz="${origin_xyz}"/>
+            <parent link="${parent}"/>
+            <child link="${child}"/>
+        </joint>
+    </xacro:macro>
+
+    <xacro:macro name="m_link" params="name origin_rpy origin_xyz radius length">
+        <link name="${name}">
+            <visual>
+                <origin rpy="${origin_rpy}" xyz="${origin_xyz}"/>
+                <geometry>
+                    <cylinder radius="${radius}" length="${length}"/>
+                </geometry>
+            </visual>
+        </link>
+
+    </xacro:macro>
+</robot>

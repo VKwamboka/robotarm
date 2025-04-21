@@ -1,0 +1,50 @@
+[6.616s] Invoking command in '/home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/build/rbot_modeling/prefix_override:/home/kwamboka/anaconda3/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/lib/python3.12/site-packages:${PYTHONPATH} /home/kwamboka/anaconda3/bin/python -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/rbot_modeling build --build-base /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/build/rbot_modeling/build install --record /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/build/rbot_modeling/install.log --single-version-externally-managed install_data
+[7.202s] running egg_info
+[7.203s] creating build/rbot_modeling/rbot_modeling.egg-info
+[7.247s] writing build/rbot_modeling/rbot_modeling.egg-info/PKG-INFO
+[7.248s] writing dependency_links to build/rbot_modeling/rbot_modeling.egg-info/dependency_links.txt
+[7.248s] writing entry points to build/rbot_modeling/rbot_modeling.egg-info/entry_points.txt
+[7.248s] writing requirements to build/rbot_modeling/rbot_modeling.egg-info/requires.txt
+[7.249s] writing top-level names to build/rbot_modeling/rbot_modeling.egg-info/top_level.txt
+[7.249s] writing manifest file 'build/rbot_modeling/rbot_modeling.egg-info/SOURCES.txt'
+[7.345s] reading manifest file 'build/rbot_modeling/rbot_modeling.egg-info/SOURCES.txt'
+[7.346s] writing manifest file 'build/rbot_modeling/rbot_modeling.egg-info/SOURCES.txt'
+[7.346s] running build
+[7.347s] running build_py
+[7.347s] creating /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/build/rbot_modeling/build
+[7.347s] creating /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/build/rbot_modeling/build/lib
+[7.347s] creating /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/build/rbot_modeling/build/lib/rbot_modeling
+[7.347s] copying rbot_modeling/send_trajectories.py -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/build/rbot_modeling/build/lib/rbot_modeling
+[7.348s] copying rbot_modeling/__init__.py -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/build/rbot_modeling/build/lib/rbot_modeling
+[7.348s] running install
+[7.355s] running install_lib
+[7.406s] creating /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/lib/python3.12/site-packages/rbot_modeling
+[7.406s] copying /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/build/rbot_modeling/build/lib/rbot_modeling/send_trajectories.py -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/lib/python3.12/site-packages/rbot_modeling
+[7.407s] copying /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/build/rbot_modeling/build/lib/rbot_modeling/__init__.py -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/lib/python3.12/site-packages/rbot_modeling
+[7.408s] byte-compiling /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/lib/python3.12/site-packages/rbot_modeling/send_trajectories.py to send_trajectories.cpython-312.pyc
+[7.408s] byte-compiling /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/lib/python3.12/site-packages/rbot_modeling/__init__.py to __init__.cpython-312.pyc
+[7.409s] running install_data
+[7.409s] creating /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/ament_index
+[7.409s] creating /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/ament_index/resource_index
+[7.410s] creating /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/ament_index/resource_index/packages
+[7.410s] copying resource/rbot_modeling -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/ament_index/resource_index/packages
+[7.410s] copying package.xml -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling
+[7.410s] creating /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/launch
+[7.411s] copying launch/gazebo.launch.py -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/launch
+[7.411s] copying launch/display.launch.py -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/launch
+[7.411s] creating /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/urdf
+[7.411s] copying urdf/robotarm1.urdf -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/urdf
+[7.411s] copying urdf/robot_transmissions.urdf.xacro -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/urdf
+[7.412s] copying urdf/robot1.urdf.xacro -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/urdf
+[7.412s] copying urdf/robot_gazebo.urdf.xacro -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/urdf
+[7.412s] copying urdf/robot2.urdf.xacro -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/urdf
+[7.412s] copying urdf/macros2.urdf.xacro -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/urdf
+[7.434s] copying urdf/macros.urdf.xacro -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/urdf
+[7.435s] copying urdf/robot_control.urdf.xacro -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/urdf
+[7.435s] creating /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/rviz
+[7.436s] running install_egg_info
+[7.496s] Copying build/rbot_modeling/rbot_modeling.egg-info to /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/lib/python3.12/site-packages/rbot_modeling-0.0.0-py3.12.egg-info
+[7.497s] running install_scripts
+[7.754s] Installing send_trajectories script to /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/lib/rbot_modeling
+[7.755s] writing list of installed files to '/home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/build/rbot_modeling/install.log'
+[7.796s] Invoked command in '/home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/build/rbot_modeling/prefix_override:/home/kwamboka/anaconda3/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/lib/python3.12/site-packages:${PYTHONPATH} /home/kwamboka/anaconda3/bin/python -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/rbot_modeling build --build-base /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/build/rbot_modeling/build install --record /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/build/rbot_modeling/install.log --single-version-externally-managed install_data

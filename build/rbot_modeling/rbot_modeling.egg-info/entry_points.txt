@@ -1,0 +1,2 @@
+[console_scripts]
+send_trajectories = rbot_modeling.send_trajectories:main

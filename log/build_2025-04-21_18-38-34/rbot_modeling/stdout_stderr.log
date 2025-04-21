@@ -1,0 +1,48 @@
+running egg_info
+creating build/rbot_modeling/rbot_modeling.egg-info
+writing build/rbot_modeling/rbot_modeling.egg-info/PKG-INFO
+writing dependency_links to build/rbot_modeling/rbot_modeling.egg-info/dependency_links.txt
+writing entry points to build/rbot_modeling/rbot_modeling.egg-info/entry_points.txt
+writing requirements to build/rbot_modeling/rbot_modeling.egg-info/requires.txt
+writing top-level names to build/rbot_modeling/rbot_modeling.egg-info/top_level.txt
+writing manifest file 'build/rbot_modeling/rbot_modeling.egg-info/SOURCES.txt'
+reading manifest file 'build/rbot_modeling/rbot_modeling.egg-info/SOURCES.txt'
+writing manifest file 'build/rbot_modeling/rbot_modeling.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/build/rbot_modeling/build
+creating /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/build/rbot_modeling/build/lib
+creating /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/build/rbot_modeling/build/lib/rbot_modeling
+copying rbot_modeling/send_trajectories.py -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/build/rbot_modeling/build/lib/rbot_modeling
+copying rbot_modeling/__init__.py -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/build/rbot_modeling/build/lib/rbot_modeling
+running install
+running install_lib
+creating /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/lib/python3.12/site-packages/rbot_modeling
+copying /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/build/rbot_modeling/build/lib/rbot_modeling/send_trajectories.py -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/lib/python3.12/site-packages/rbot_modeling
+copying /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/build/rbot_modeling/build/lib/rbot_modeling/__init__.py -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/lib/python3.12/site-packages/rbot_modeling
+byte-compiling /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/lib/python3.12/site-packages/rbot_modeling/send_trajectories.py to send_trajectories.cpython-312.pyc
+byte-compiling /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/lib/python3.12/site-packages/rbot_modeling/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/ament_index
+creating /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/ament_index/resource_index
+creating /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/ament_index/resource_index/packages
+copying resource/rbot_modeling -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/ament_index/resource_index/packages
+copying package.xml -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling
+creating /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/launch
+copying launch/gazebo.launch.py -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/launch
+copying launch/display.launch.py -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/launch
+creating /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/urdf
+copying urdf/robotarm1.urdf -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/urdf
+copying urdf/robot_transmissions.urdf.xacro -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/urdf
+copying urdf/robot1.urdf.xacro -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/urdf
+copying urdf/robot_gazebo.urdf.xacro -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/urdf
+copying urdf/robot2.urdf.xacro -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/urdf
+copying urdf/macros2.urdf.xacro -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/urdf
+copying urdf/macros.urdf.xacro -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/urdf
+copying urdf/robot_control.urdf.xacro -> /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/urdf
+creating /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/share/rbot_modeling/rviz
+running install_egg_info
+Copying build/rbot_modeling/rbot_modeling.egg-info to /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/lib/python3.12/site-packages/rbot_modeling-0.0.0-py3.12.egg-info
+running install_scripts
+Installing send_trajectories script to /home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/install/rbot_modeling/lib/rbot_modeling
+writing list of installed files to '/home/kwamboka/embodiedIntelligence/ros2_ws2/src/rbot_modeling/build/rbot_modeling/install.log'

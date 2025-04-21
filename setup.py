@@ -28,6 +28,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'send_trajectories = rbot_modeling.send_trajectories:main'
+
+
         ],
     },
 )
